@@ -17,7 +17,7 @@ const ScoreCard = () => {
     const apiCall = async () => {
       try {
         const response = await fetch(
-          "https://api.cricapi.com/v1/cricScore?apikey=ec85f7cf-0964-4ea2-a9a1-43551932a4cb"
+          "https://api.cricapi.com/v1/cricScore?apikey={API_KEY}"
         );
         const resdata = await response.json();
         setData(resdata.data);
